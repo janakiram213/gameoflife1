@@ -28,16 +28,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.0.0</version>
-                <properties>
-                   <failOnMissingWebXml>false</failOnMissingWebXml>
-                </properties>
-                  <configuration>
-                    <archive>
+                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>gameoflife.Main</mainClass>
                         </manifest>
-                    </archive>
+                     </archive>
                  </configuration>
             </plugin>
             
