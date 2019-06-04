@@ -27,15 +27,18 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
+                <version>3.0.0</version>
                 <configuration>
+                   <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+                  <configuration>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>gameoflife.Main</mainClass>
                         </manifest>
                     </archive>
-                </configuration>
+                 </configuration>
             </plugin>
             
             <plugin>
